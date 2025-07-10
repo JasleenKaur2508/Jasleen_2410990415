@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Personal Details Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 20px;
+    }
+
+    .form-container {
+      background-color: #fdf5e6;
+      border: 1px solid #ccc;
+      padding: 20px;
+      width: 700px;
+      margin: auto;
+    }
+
+    h3 {
+      color: red;
+      font-weight: normal;
+      margin-bottom: 10px;
+    }
+
+    fieldset {
+      border: 1px solid #aaa;
+      margin-bottom: 20px;
+      padding: 10px;
+    }
+
+    legend {
+      font-weight: bold;
+    }
+
+    label {
+      display: inline-block;
+      width: 110px;
+      margin: 5px 0;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    input[type="password"],
+    input[type="number"] {
+      width: 190px;
+      padding: 5px;
+      margin-right: 10px;
+    }
+
+    .gender-options input {
+      margin-left: 10px;
+      margin-right: 5px;
+    }
+
+    .button-group {
+      text-align: center;
+    }
+
+    .submit-btn {
+      background-color: #00cc00;
+      color: white;
+      padding: 8px 20px;
+      border: none;
+      font-weight: bold;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    .reset-btn {
+      background-color: #cc0000;
+      color: white;
+      padding: 8px 20px;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .form-row {
+      margin-bottom: 10px;
+    }
+
+    .form-inline label {
+      width: auto;
+      margin-right: 5px;
+    }
+
+    .form-inline input {
+      width: 120px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="form-container">
+  <h3>Required Field are denoted by '*'</h3>
+
+  <fieldset>
+    <legend>Personal Details</legend>
+    <div class="form-row">
+      <label for="fname">First Name *</label>
+      <input type="text" id="fname" placeholder="Enter your First Name">
+      <label for="lname">Last Name *</label>
+      <input type="text" id="lname" placeholder="Enter your Last Name">
+    </div>
+    <div class="form-row">
+      <label for="dob">Date of Birth (DOB) *</label>
+      <input type="text" id="dob" placeholder="dd-mm-yyyy">
+      <label for="age">Age *</label>
+      <input type="number" id="age">
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Gender</legend>
+     <div class="form-row"><div class="form-row gender-options">
+      <label>Gender *</label>
+      Male <input type="radio" name="gender">
+      Female <input type="radio" name="gender">
+      Others <input type="radio" name="gender">
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Contact Information</legend>
+    <div class="form-row">
+      <label for="phone">Phone Number *</label>
+      <input type="text" id="phone" placeholder="Enter your Phone Number">
+      <label for="email">E-mail ID *</label>
+      <input type="email" id="email" placeholder="Enter your Email Address">
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Address Details</legend>
+    <div class="form-row">
+      <label for="address">Address *</label>
+      <input type="text" id="address" placeholder="Enter your Address">
+      <label for="state">State *</label>
+      <input type="text" id="state" placeholder="Enter your State">
+    </div>
+    <div class="form-row">
+      <label for="city">City *</label>
+      <input type="text" id="city" placeholder="City">
+      <label for="pincode">Pincode *</label>
+      <input type="text" id="pincode" placeholder="Pincode">
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Login Detail</legend>
+    <div class="form-row">
+      <label for="username">User-Name *</label>
+      <input type="text" id="username" placeholder="User-Name">
+    </div>
+    <div class="form-row">
+      <label for="password">Password *</label>
+      <input type="password" id="password" placeholder="*******">
+    </div>
+  </fieldset>
+
+  <div class="button-group">
+    <button class="submit-btn" type="submit">Submit</button>
+    <button class="reset-btn" type="reset">Reset</button>
+  </div>
+</div>
+
+</body>
+</html>
+
